@@ -13,12 +13,6 @@
 /* Global styles */
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    /* Centre content; Credit: Web Dev Simplified */
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
