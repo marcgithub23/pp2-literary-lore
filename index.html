@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Literary Lore</title>
 </head>
+
 <body>
-    
+    <div class="home-screen">
+        <h1 class="heading">Literary Lore</h1>
+        <div class="logo-image"></div>
+        <main class="introduction"></main>
+        <div class="register">
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="text-input" placeholder="Enter username" required>
+        </div>
+        <div class="game-category">
+            <h2>Game Category</h2>
+            <div class="game-category-options">
+                <div class="game-category-option">
+                    <input type="radio" name="game-category" value="alice-in-wonderland" id="alice-in-wonderland"
+                        required>
+                    <label for="alice-in-wonderland">Alice in Wonderland</label>
+                </div>
+                <div class="game-category-option">
+                    <input type="radio" name="game-category" value="harry-potter" id="harry-potter" required>
+                    <label for="harry-potter">Harry Potter</label>
+                </div>
+                <div class="game-category-option">
+                    <input type="radio" name="game-category" value="mistborn" id="mistborn" required>
+                    <label for="mistborn">Mistborn</label>
+                </div>
+            </div>
+        </div>
+        <div class="level">
+            <h2>Level</h2>
+            <div class="level-options">
+                <div class="level-option">
+                    <input type="radio" name="level" value="easy" id="easy" required>
+                    <label for="easy">Easy</label>
+                </div>
+                <div class="level-option">
+                    <input type="radio" name="level" value="normal" id="normal" required>
+                    <label for="normal">Normal</label>
+                </div>
+                <div class="level-option">
+                    <input type="radio" name="level" value="hard" id="hard" required>
+                    <label for="hard">Hard</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn start-btn">Start</button>
+    </div>
 </body>
+
 </html>
