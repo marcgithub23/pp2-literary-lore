@@ -2,8 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@0;1&family=Changa&family=Crimson+Text:ital@0;1&display=swap');
 
 /* Override default styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+}
+
+h2 {
+    font-family: 'Changa', sans-serif;
 }
