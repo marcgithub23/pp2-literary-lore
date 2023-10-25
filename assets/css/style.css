@@ -33,7 +33,14 @@ h2 {
     width: 800px;
     max-width: 80%;
     background-color: #c3a894;
-    border-radius: 5px;
+    border-radius: 5px;  /* Round off the edges */
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+}
+
+/* Credit: Web Dev Sinplified */
+.btn-grid {
+    display: grid;
+    gap: 10px;  /* Space out answer buttons from each other */
+    margin: 20px;  /* Put space between answer buttons and question */
 }
