@@ -10,13 +10,29 @@
     margin: 0;
 }
 
+/* Credit: Web Dev Simplified */
+:root {
+    --hue-neutral: #ddd5c6;
+    --hue-correct: #26f42d;
+    --hue-wrong: #f40f0f;
+}
+
 /* Global styles */
 body {
+    --hue: var(--hue-neutral);
     font-family: 'Alegreya Sans', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #ddd5c6;
+    background-color: var(--hue);
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
 }
 
 h1 {
