@@ -74,6 +74,10 @@ li {
     max-height: 300px;
 }
 
+.hide {
+    display: none;
+}
+
 /* Quiz screen display styling */
 /* Credit: Web Dev Simplified */
 .container {
