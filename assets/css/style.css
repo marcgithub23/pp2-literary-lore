@@ -60,3 +60,37 @@ h2 {
     gap: 10px;  /* Space out answer buttons from each other */
     margin: 20px;  /* Put space between answer buttons and question */
 }
+
+.btn {
+    --hue: #aa7b63;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--hue);
+    padding: 5px 10px;
+    color: #ffff;
+    outline: none;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: #000;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn,
+.quit-btn {
+    background-color: #904e31;
+    font-size: 1.10rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
