@@ -24,17 +24,49 @@
 <body>
     <!-- Home screen display -->
     <div id="home-screen" class="center">
-        <h1 class="heading center">Literary Lore</h1>
-        <div class="logo-image"></div>
+        <h1 class="heading center">Literary<br>Lore</h1>
+        <div class="logo-image center"></div>
         <!-- Introduction to what the quiz is, how to play, and the rules -->
-        <main class="introduction"></main>
+        <main class="introduction">
+            <h2 class="hide">Introduction</h2>
+            <p>
+                Hello there, fellow literary enthusiast! Do you know your literary lore well? Care to test your
+                knowledge and answer ten trivia questions?
+            </p>
+            <p>Here are the rules:</p>
+            <ul>
+                <li>Enter a username.</li>
+                <li>
+                    Select a game category based on fiction titles (Alice in Wonderland, Harry Potter, and Mistborn).
+                    The ten questions will be about the title you select.
+                </li>
+                <li>
+                    Select a level of difficulty and the timer will be set accordingly. You will have 7 minutes and 30
+                    seconds to complete and answer all the questions on the Easy level, 5 minutes on Normal, and 2
+                    minutes and 30 seconds on Hard.
+                </li>
+                <li>
+                    Once you click start, you will immediately receive feedback as to whether the answer you’ve selected
+                    is the correct or wrong one. Click on the next button to proceed to the next question. The timer and
+                    your progress will be shown above the questions. You may also click on the quit button at any point
+                    to go back to the home screen.
+                </li>
+                <li>
+                    Once you complete the quiz, you will see a tally of your total score. You can click on the try again
+                    button to retake the same quiz with the same game category and level of difficulty, but the
+                    questions and answers will be shuffled to keep it challenging! Otherwise, you can click on the home
+                    button to go back to the home screen and try a different game category and/or level of difficulty.
+                </li>
+            </ul>
+        </main>
         <!-- User can create a username -->
-        <div class="register">
+        <div class="register center">
+            <h2 class="center">Create Username</h2>
             <label for="username">Username:</label>
             <input type="text" id="username" class="text-input" placeholder="Enter username" required>
         </div>
         <!-- User can select different sets of questions based on a book or series title -->
-        <div class="game-category">
+        <div class="game-category center">
             <h2 class="center">Game Category</h2>
             <div class="game-category-options">
                 <div class="game-category-option">
@@ -53,7 +85,7 @@
             </div>
         </div>
         <!-- User can select level of difficulty based on timer duration -->
-        <div class="level">
+        <div class="level center">
             <h2 class="center">Level</h2>
             <div class="level-options">
                 <div class="level-option">

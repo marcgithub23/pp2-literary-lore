@@ -43,9 +43,35 @@ h2 {
     font-family: 'Changa', sans-serif;
 }
 
+p,
+ul {
+    padding: 10px 2px;
+}
+
+li {
+    padding: 3px;
+    margin-left: 20px;
+}
+
 .center {
     max-width: 80%;
     margin: auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-image {
+    background: url("../images/book-stack.png") no-repeat center center / cover;
+    height: 25vw;
+    width: 25vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* Quiz screen display styling */
