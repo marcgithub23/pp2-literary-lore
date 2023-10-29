@@ -23,8 +23,8 @@
 
 <body>
     <!-- Home screen display -->
-    <div id="home-screen" class="">
-        <h1 class="heading">Literary Lore</h1>
+    <div id="home-screen" class="center">
+        <h1 class="heading center">Literary Lore</h1>
         <div class="logo-image"></div>
         <!-- Introduction to what the quiz is, how to play, and the rules -->
         <main class="introduction"></main>
@@ -35,7 +35,7 @@
         </div>
         <!-- User can select different sets of questions based on a book or series title -->
         <div class="game-category">
-            <h2>Game Category</h2>
+            <h2 class="center">Game Category</h2>
             <div class="game-category-options">
                 <div class="game-category-option">
                     <input type="radio" name="game-category" value="alice-in-wonderland" id="alice-in-wonderland"
@@ -54,7 +54,7 @@
         </div>
         <!-- User can select level of difficulty based on timer duration -->
         <div class="level">
-            <h2>Level</h2>
+            <h2 class="center">Level</h2>
             <div class="level-options">
                 <div class="level-option">
                     <input type="radio" name="level" value="easy" id="easy" required>
@@ -70,21 +70,23 @@
                 </div>
             </div>
         </div>
-        <button class="btn start-btn">Start</button>
+        <div class="controls">
+            <button class="btn start-btn">Start</button>
+        </div>
     </div>
 
     <!-- Quiz screen display -->
-    <div id="quiz-screen" class="">
+    <div id="quiz-screen" class="center">
         <!-- Display image depending on correct or wrong answer -->
         <div>
             <img src="" alt="" class="correct-image">
             <img src="" alt="" class="wrong-image">
         </div>
-        <div>
+        <div class="timer-progress-container center">
             <p class="timer">Timer</p>
             <p class="progress">Progress</p>
         </div>
-        <div class="container">
+        <div class="container center">
             <div id="question-container">
                 <!-- Shuffle questions -->
                 <div id="question">Question</div>

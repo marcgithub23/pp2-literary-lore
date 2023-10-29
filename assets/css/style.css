@@ -43,6 +43,11 @@ h2 {
     font-family: 'Changa', sans-serif;
 }
 
+.center {
+    max-width: 80%;
+    margin: auto;
+}
+
 /* Quiz screen display styling */
 /* Credit: Web Dev Simplified */
 .container {
@@ -93,4 +98,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.timer-progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
