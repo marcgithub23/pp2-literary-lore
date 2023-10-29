@@ -113,7 +113,9 @@ li {
 
 .start-btn,
 .next-btn,
-.quit-btn {
+.quit-btn,
+.try-again-btn,
+.home-btn {
     background-color: #904e31;
     font-size: 1.10rem;
     font-weight: bold;
@@ -122,12 +124,20 @@ li {
 
 .controls {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 3px;
+    gap: 20px;
 }
 
 .timer-progress-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
 }

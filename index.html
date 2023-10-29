@@ -130,10 +130,39 @@
                     <button class="btn">Answer 4</button>
                 </div>
             </div>
-            <div class="controls">
-                <button id="next-btn" class="next-btn btn">Next</button>
-                <button id="quit-btn" class="quit-btn btn">Quit</button>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn">Next</button>
+            <button id="quit-btn" class="quit-btn btn">Quit</button>
+        </div>
+    </div>
+
+    <!-- Results screen display -->
+    <div id="results-screen" class="center">
+        <!-- Display image depending on score range -->
+        <div>
+            <img src="" alt="" id="perfect-job-img">
+            <img src="" alt="" id="excellent-job-img">
+            <img src="" alt="" id="well-done-img">
+            <img src="" alt="" id="better-luck-img">
+        </div>
+        <div class="results-container center">
+            <p>RESULTS</p>
+        </div>
+        <div class="container center">
+            <div class="total-score center">
+                <p>Username, you scored:</p>
             </div>
+            <div class="previous-score center">
+                <p>Previous score:</p>
+            </div>
+            <div class="message center">
+                <p>Message</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="try-again-btn" class="try-again-btn btn">Try Again</button>
+            <button id="home-btn" class="home-btn btn">Home</button>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
