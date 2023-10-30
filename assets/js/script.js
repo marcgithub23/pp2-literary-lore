@@ -1,5 +1,6 @@
 const homeScreen = document.getElementById('home-screen')
 const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
 const quizScreen = document.getElementById('quiz-screen')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -9,7 +10,6 @@ let shuffledQuestions, currentQuestionIndex
 startButton.addEventListener('click', startGame)
 
 function startGame() {
-    console.log('started')
     homeScreen.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -18,6 +18,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+    resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
@@ -33,6 +34,13 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
     })
+}
+
+function resetState() {
+    nextButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    }
 }
 
 function selectAnswer() {
