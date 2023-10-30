@@ -4,10 +4,15 @@ const nextButton = document.getElementById('next-btn')
 const quizScreen = document.getElementById('quiz-screen')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const resultsScreen = document.getElementById('results-screen')
 
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 
 function startGame() {
     homeScreen.classList.add('hide')
@@ -37,15 +42,41 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    clearStatusClass(document.body)
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
 
-function selectAnswer() {
-
+function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+        quizScreen.classList.add('hide')
+        resultsScreen.classList.remove('hide')
+    }
 }
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+ }
+
+ function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+ }
 
 // Questions and answers
 const questions = [
